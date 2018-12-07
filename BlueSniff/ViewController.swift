@@ -77,6 +77,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, UITableViewDat
         self.tableView.reloadData()
     }
     
+    
+    
     func centralManagerDidUpdateState(central: CBCentralManager) {
         if central.state == CBCentralManagerState.PoweredOn {
             startScan()
